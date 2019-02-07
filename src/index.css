@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'OpenSans';
+  src: local("Open Sans Light"),
+       local("OpenSans Light"),
+       local("OpenSans-Light"),
+       url("./fonts/OpenSans-Light.woff2?v=1.1.0") format("woff2"),
+       url("./fonts/OpenSans-Light.woff?v=1.1.0") format("woff"),
+       url("./fonts/OpenSans-Light.ttf?v=1.1.0") format("truetype"),
+       url("./fonts/OpenSans-Light.svg?v=1.1.0#Light") format("svg");
+
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: local("Open Sans Regular"),
+       local("OpenSans Regular"),
+       local("OpenSans-Regular"),
+       url("./fonts/OpenSans-Regular.woff2?v=1.1.0") format("woff2"),
+       url("./fonts/OpenSans-Regular.woff?v=1.1.0") format("woff"),
+       url("./fonts/OpenSans-Regular.ttf?v=1.1.0") format("truetype"),
+       url("./fonts/OpenSans-Regular.svg?v=1.1.0#Regular") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'OpenSans';
+  src: local("Open Sans Bold"),
+       local("OpenSans Bold"),
+       local("OpenSans-Bold"),
+       url("./fonts/OpenSans-Bold.woff2?v=1.1.0") format("woff2"),
+       url("./fonts/OpenSans-Bold.woff?v=1.1.0") format("woff"),
+       url("./fonts/OpenSans-Bold.ttf?v=1.1.0") format("truetype"),
+       url("./fonts/OpenSans-Bold.svg?v=1.1.0#Bold") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+/* 0.0 General
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+:root{
+}
+
+/* 1.0 Reset
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+a:matches(:hover, :any-link) {
+  outline: 0;
+}
+
+b, strong {
+  font-weight: bold;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+button, input, optgroup, select, textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+button {
+  overflow: visible;
+}
+
+button, select {
+  text-transform: none;
+}
+button:focus{
+  outline: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], html input[disabled] {
+  cursor: default;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td, th {
+  padding: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "OpenSans", sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  font-display: swap;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: none;
+}
+
+section{
+  float: left;
+  position: relative;
+}
+
+.clearfix {
+  clear: fix-legacy;
+}
+section{
+  width: 100%;
+  float: left;
+}
+main{
+  float: left;
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+/* custom all
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+ul{
+  list-style-type: none;
+}
+@media(min-width: 1024px){
+  body::-webkit-scrollbar {
+    width: 1em;
+  }
+  body::-webkit-scrollbar-track {
+    background-color: #BC64D2;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: #009034;
+    outline: 1px solid slategrey;
+  }
+}

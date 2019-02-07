@@ -1,0 +1,32 @@
+.social{
+	width: 140px;
+	height: 20px;
+	display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+	&__element{
+		a{	
+			display: block;
+			size: 20px;
+			font-size: 0;
+			background-image: url(./images/social--sprite__1_white.png);
+			background-size: auto 100%;
+			cursor: pointer;
+		}
+		&:nth-of-type(1){
+			a{ 
+				background-position-x: 0px; 
+			}
+		}
+		&:nth-of-type(2){
+			a{
+				background-position-x: -58px;
+			}
+		}
+		&:nth-of-type(3){
+			a{
+				background-position-x: 100%;
+			}
+		}
+	}
+}
