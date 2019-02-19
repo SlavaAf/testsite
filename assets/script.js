@@ -7,7 +7,26 @@
 
 
 $(document).ready(function () {
-
+  $("#fullpage").fullpage({
+    menu:'#menu',
+    scrollOverflow:true,
+    slidesNavigation: true,   
+    sectionSelector: '#fullpage section',
+    navigation: true,
+    // parallax: true,
+    // parallaxOptions: {
+    //   type: 'reveal',
+    //   percentage: 62,
+    //   property: 'translate'
+    // },
+    navigationPosition: 'right' ,
+//    navigationTooltips: ['Р“Р»Р°РІРЅР°СЏ', 'РўРµС…РЅРѕР»РѕРіРёРё','Р Р°Р·СЂР°Р±РѕС‚РєР°','РљР»РёРµРЅС‚С‹','РџРѕСЃС‚Р°РІРєР°', 'РљРѕРЅС‚Р°РєС‚С‹'],
+    scrollOverflow:true,
+    anchors: ['Main', 'block-1', 'block-2', 'block-3','block-4','block-5','block-6','footer'],
+    css3: true,
+    // responsiveWidth: 992,
+    scrollingSpeed: 1000
+  })
 
   // console.log(navLinkPadding);
 
