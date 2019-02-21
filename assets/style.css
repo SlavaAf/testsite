@@ -2170,6 +2170,8 @@ video{
   #platform-new .container{
     padding-top: 0;
     height: auto!important;
+    width: 100%;
+    max-width: 767px;
   }
   #platform-new .col-md-6{
     width: 100%;
@@ -2215,8 +2217,12 @@ video{
     height: 100vh!important;
     max-height: 470px;
   }
+  #how-it-works-new .container{
+    max-width: 768px;
+  }
   #faq .container{
     padding-top: 15px!important;
+    /*max-width: 768px;*/
   }
   #faq .section-title{
     font-size: 36px;
@@ -2231,6 +2237,7 @@ video{
   }
   #company .container{
     padding: 0!important;
+    max-width: 768px;
   }
   #company .col-md-6:first-child{
     padding-left: 15px!important;
@@ -2255,6 +2262,7 @@ video{
   }
   #integrate-new .container{
     /*padding: 0;*/
+    max-width: 768px;
   }
   #integrate-new .col-md-6:first-child{
     background-color: #2d1689;
@@ -2263,6 +2271,9 @@ video{
     padding-left: 15px!important;
     padding-right: 15px!important;
     padding-top: 15px!important;
+  }
+  #integrate-new .scrollable-content-new{
+    min-height: 320px;
   }
   #news{
     padding-top: 15px;
