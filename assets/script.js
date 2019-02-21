@@ -203,6 +203,17 @@ $(document).ready(function () {
     items: 3,
     dots: false,
     // mouseDrag: false
+    responsive: {
+      0:{
+        items: 1,
+      },
+      600:{
+        items: 2,
+      },
+      768:{
+        items: 3,
+      }
+    },
   });
 
   $('.owl-inside-owl').owlCarousel({
