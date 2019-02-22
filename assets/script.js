@@ -21,7 +21,7 @@ $(document).ready(function () {
       // scrollOverflow:true,
       slidesNavigation: true,   
       sectionSelector: '.section',
-      navigation: true,
+      navigation: false,
       parallax: true,
       parallaxOptions: {
         type: 'reveal',
