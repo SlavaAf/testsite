@@ -2080,11 +2080,11 @@ video{
   transition: all .5s ease;
 }
 .section__container.active::after{
-  background-color: rgba(147,112,219, 0.8);
+  background-color: rgba(147,112,219, 0.9);
 }
 .section__link--parent{
   position: absolute;
-  bottom: 3%;
+  bottom: 10%;
   z-index: 4;
   display: flex;
   align-items: center;
