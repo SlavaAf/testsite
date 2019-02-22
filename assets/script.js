@@ -8,7 +8,16 @@
 
 $(document).ready(function () {
 
-  document.getElementById("video__1").play();
+  var video__home = document.getElementById("video__1");
+  video__home.play();
+  video__home.addEventListener("ended", function(){
+    console.log("fuuuck")
+    document.querySelector(".section__container").classList.add("active");
+    document.querySelector(".section__heading--h1").classList.add("active");
+    document.querySelector(".section__heading--h2").classList.add("active");
+    document.querySelector(".section__link--parent").classList.add("active");
+  })
+
   var width = document.documentElement.clientWidth;
   if(width > 1000){
     var links = document.getElementById("menu").querySelectorAll("a"),
