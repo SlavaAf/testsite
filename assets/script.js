@@ -10,7 +10,7 @@ $(document).ready(function () {
 
   document.getElementById("video__1").play();
   var width = document.documentElement.clientWidth;
-  if(width > 1100){
+  if(width > 1000){
 
     $("#fullpage").fullpage({
       menu:'#menu',
@@ -27,7 +27,7 @@ $(document).ready(function () {
       navigationPosition: 'right' ,
   //    navigationTooltips: ['Р“Р»Р°РІРЅР°СЏ', 'РўРµС…РЅРѕР»РѕРіРёРё','Р Р°Р·СЂР°Р±РѕС‚РєР°','РљР»РёРµРЅС‚С‹','РџРѕСЃС‚Р°РІРєР°', 'РљРѕРЅС‚Р°РєС‚С‹'],
       // scrollOverflow:true,
-      anchors: ['main', 'block-1', 'block-2', 'block-3', 'block-4','block-5','block-6','block-7','footer'],
+      anchors: ['home', 'solutions-new', 'platform-new', 'how-it-works-new', 'faq','company','integrate-new','news','contact-us'],
       css3: true,
       // responsiveWidth: 992,
       scrollingSpeed: 1000

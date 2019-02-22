@@ -2064,34 +2064,20 @@ video{
   background-color: rgba(138,43,226, 0.5);
   background-color: rgba(147,112,219, 0.8);
 }
-@media(min-width: 1300px){
-  .solutions-slide-2{
-    width: 50%!important;
-  }
-  .solutions-slide-3{
-    width: 50%!important;
-  }
+.section__link--parent{
+  position: absolute;
+  bottom: 3%;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-@media(min-width: 767px){
-  #solutions-new{
-    height: 620px;
-    min-height: auto;
-  }
-  .solutions-slide-2{
-    width: 54%!important;
-  }
-  .icons-flex-wrapper{
-    transform: scale(0.65) translateX(90px);
-    padding-right: 0;
-    height: 100%;
-  }
-  .solutions-slide-3 .owl-item {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .owl__element--first{
-    padding-top: 50px!important;
-  }
+.section__link{
+  width: 150px;
+}
+.section__link img{
+  width: 100%;
+  height: auto;
 }
 @media(max-width: 767px){
   .section__container{
@@ -2285,8 +2271,81 @@ video{
 
 }
 @media(min-width: 767px){
+  #solutions-new{
+    height: 620px;
+    min-height: auto;
+  }
   .icons-flex-wrapper{
-    transform: scale(0.7) translateX(90px);
+    transform: scale(0.6) translateX(115px);
+    padding-right: 0;
+    height: 100%;
+  }
+  .solutions-slide-3 .owl-item {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .owl__element--first{
+    padding-top: 50px!important;
+  }
+  @media(max-width: 1000px){
+
+    #platform-new{
+      min-height: 700px;
+      height: 700px!important;
+    }
+    #platform-new .container{
+      min-height: 700px;
+      height: 700px!important;
+      padding-top: 0;
+    }
+    #platform-new .col-md-6{
+      padding-top: 30px!important;
+    }
+    .scheme__top{
+      font-size: 12px;
+    }
+    .scheme__bottom{
+      font-size: 10px;
+    }
+    .scheme__txt{
+      font-size: 10px!important;
+      transform: scale(0.65) rotate(-25deg) translate(-70%, -33px)!important;
+    }
+    #how-it-works-new{
+      min-height: 620px;
+      height: 620px;
+      overflow: hidden;
+    }
+    #how-it-works-new .col-md-6{
+      padding-top: 30px!important;
+    }
+    #how-it-works-new .scrollable-content-new{
+      max-height: 520px;
+    }
+    #faq{
+      max-height: 620px;
+      min-height: 500px;
+    }
+    #company{
+      min-height: 620px;
+    }
+    .company-name{
+      font-size: 11px;
+    }
+    .company-position{
+      font-size: 9px;
+    }
+    #integrate-new{
+      max-height: 720px;
+      min-height: 600px;
+    }
+    #integrate-new .scrollable-content-new{
+      height: 400px!important;
+    }
+    #news{
+      min-height: initial;
+      max-height: 720px;
+    }  
   }
 }
 @media(min-width: 1024px){
