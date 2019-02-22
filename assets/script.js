@@ -35,7 +35,7 @@ $(document).ready(function () {
       css3: true,
       // responsiveWidth: 992,
       scrollingSpeed: 1000,
-      normalScrollElements: "#home"
+      // normalScrollElements: "#home"
     })
   }
 
