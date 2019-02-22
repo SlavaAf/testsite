@@ -11,7 +11,6 @@ $(document).ready(function () {
   var video__home = document.getElementById("video__1");
   video__home.play();
   video__home.addEventListener("ended", function(){
-    console.log("fuuuck")
     document.querySelector(".section__container").classList.add("active");
     document.querySelector(".section__heading--h1").classList.add("active");
     document.querySelector(".section__heading--h2").classList.add("active");
@@ -27,7 +26,7 @@ $(document).ready(function () {
     }
     $("#fullpage").fullpage({
       menu:'#menu',
-      // scrollOverflow:true,
+      // scrollOverflow: true,
       slidesNavigation: true,   
       sectionSelector: '.section',
       navigation: false,
@@ -44,7 +43,8 @@ $(document).ready(function () {
       css3: true,
       // responsiveWidth: 992,
       scrollingSpeed: 1000,
-      // normalScrollElements: "#home"
+      normalScrollElements: ".scrollable-content-new",
+
     })
   }
 
