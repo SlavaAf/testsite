@@ -31,6 +31,9 @@ $(document).ready(function(){
         var element  = document.getElementById(link),
             parent   = element.parentElement,
             position = element.offsetTop - 100;
+            if(link === "platform_content__2"){
+              position = position + 50;
+            }
             console.log(element)
             console.log(position)
         parent.scrollTop = position;

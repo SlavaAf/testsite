@@ -1639,7 +1639,7 @@ h2.products-title {
   -webkit-transform: scale(1.15);
       -ms-transform: scale(1.15);
           transform: scale(1.15);
-  /*filter: opacity(100%);*/
+  filter: opacity(100%);
 }
 
 .to-product-geo img {
@@ -2406,7 +2406,7 @@ video{
   margin-bottom: 15px;
 }
 #platform_content__1{
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 #integration_content__1{
   margin-bottom: 30px;
@@ -2451,6 +2451,10 @@ video{
 #contact-us .footer{
   height: 60px;
   background-color: #fff;
+}
+#faq .fp-tableCell{
+  display: flex;
+  /*align-items: center;*/
 }
 @media(max-width: 1000px){
 
@@ -2832,11 +2836,17 @@ video{
 }
 @media(min-width: 1240px){
   @media(max-height: 700px){
+    #solutions-new .icons-flex-wrapper{
+      transform: scale(0.75) translateX(0px);
+    }
+    .owl-inside-owl .owl-nav{
+      bottom: 35px;
+    }
     .section__container{
       min-height: 600px;
     }
     .solutions__title{
-      margin-top: 50px;
+      margin-top: 100px;
     }
     #platform-new .col-md-6:first-child{
       padding-top: 0!important;
