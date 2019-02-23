@@ -70,7 +70,7 @@ $(document).ready(function(){
       css3: true,
       // responsiveWidth: 992,
       scrollingSpeed: 1000,
-      normalScrollElements: ".scrollable-content-new, .footer",
+      normalScrollElements: ".scrollable-content-new, .card-body",
 
     })
   }

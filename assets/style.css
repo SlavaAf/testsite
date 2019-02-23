@@ -2269,13 +2269,15 @@ video{
   -webkit-transition: opacity .5s 1s ease;
   -o-transition: opacity .5s 1s ease;
   transition: opacity .5s 1s ease;
-  opacity: 1
+  opacity: 1;
+  text-shadow: 0px 0px 129.69px rgba(0, 0, 0, 0.75);
 }
 .section__heading--h2.active{
   -webkit-transition: opacity .5s 2s ease;
   -o-transition: opacity .5s 2s ease;
   transition: opacity .5s 2s ease;
-  opacity: 1
+  opacity: 1;
+  text-shadow: 0px 0px 129.69px rgba(0, 0, 0, 0.75);
 }
 .section__video{
   position: absolute;
@@ -2322,14 +2324,14 @@ video{
   width: 100%;
   height: 100%;
   z-index: 2;
-  background-color: rgba(138,43,226, 0.5);
-  background-color: rgba(147,112,219, 0);
+  background-color: rgba(40, 21, 125, 0.89);
+  background-color: rgba(40, 21, 125, 0);
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
 }
 .section__container.active::after{
-  background-color: rgba(147,112,219, 0.9);
+  background-color: rgba(40, 21, 125, 0.89);
 }
 .section__link--parent{
   position: absolute;
@@ -2355,6 +2357,11 @@ video{
 }
 .section__link{
   width: 150px;
+  transition: transform .3s ease;
+  will-change: transform;
+}
+.section__link:hover{
+  transform: translateY(-10px);
 }
 .section__link img{
   width: 100%;
@@ -2390,6 +2397,9 @@ video{
   text-decoration: underline;
   transition: all .3s ease;
 }
+.main-text a:nth-of-type(1){
+  margin-right: 15px;
+}
 .main-text a:hover{
   text-decoration: none;
 }
@@ -2416,6 +2426,7 @@ video{
 }
 #integrate-new .section-title{
   text-transform: inherit;
+  margin-bottom: 10px;
 }
 #integrate-new .scrollable-content-bordered {
     border-left: 1.2px solid #3819A0;
@@ -2837,7 +2848,7 @@ video{
 @media(min-width: 1240px){
   @media(max-height: 700px){
     #solutions-new .icons-flex-wrapper{
-      transform: scale(0.75) translateX(0px);
+      transform: scale(0.9) translateX(0px);
     }
     .owl-inside-owl .owl-nav{
       bottom: 35px;
@@ -2847,6 +2858,8 @@ video{
     }
     .solutions__title{
       margin-top: 100px;
+      font-size: 2rem;
+      /*transform: scale(0.8); */
     }
     #platform-new .col-md-6:first-child{
       padding-top: 0!important;
