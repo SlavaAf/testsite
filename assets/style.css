@@ -2359,6 +2359,10 @@ video{
   margin-bottom: 0;
   padding-left: 45px;
   padding-right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 540px;
+  width: 100%;
 }
 .solutions__title b{
   font-weight: inherit;
@@ -2379,6 +2383,31 @@ video{
   background-color: rgba(255, 196, 8, 0.3);
   /*color: rgba(255, 196, 8, 1);*/
   font-weight: inherit; 
+}
+#platform-new{}
+#platform-new .scrollable-content-new .main-text{
+  color: inherit;
+}
+.scrollable-content-item-first{
+  margin-bottom: 15px;
+}
+#platform_content__1{
+  margin-bottom: 30px;
+}
+#integration_content__1{
+  margin-bottom: 30px;
+}
+#platform-new .scrollable-content-bordered{
+  margin-left: -52px;
+}
+#integrate-new .section-title{
+  text-transform: inherit;
+}
+#integrate-new .scrollable-content-bordered {
+    border-left: 1.2px solid #3819A0;
+    margin-left: -52px;
+    padding-left: 30px;
+    padding-bottom: 20px;
 }
 @media(max-width: 767px){
   .scrollable-content::-webkit-scrollbar, .scrollable-content-new::-webkit-scrollbar {

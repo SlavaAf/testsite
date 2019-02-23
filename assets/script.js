@@ -6,7 +6,7 @@
 
 
 
-$(document).ready(function () {
+$(document).ready(function(){
 
   var video__home = document.getElementById("video__1");
   video__home.play();
@@ -17,10 +17,27 @@ $(document).ready(function () {
     document.querySelector(".section__link--parent").classList.add("active");
   })
 
+  var scroll_elements = document.querySelectorAll("[data-scrollin]");
+  for(var i = 0; i < scroll_elements.length; i++){
+
+    scroll_elements[i].addEventListener("click", function(e){
+      e.preventDefault();
+      var link = this.href.split("#")[1];
+      if(link !== ""){
+        var element  = document.getElementById(link),
+            parent   = element.parentElement,
+            position = element.offsetTop - 100;
+        parent.scrollTop = position;
+
+      }
+    })
+  }
+
   var width = document.documentElement.clientWidth;
   if(width > 1000){
     var links = document.getElementById("menu").querySelectorAll("a"),
-        hrefs = ['#block-1', '#block-2', '#block-3', '#block-4','#block-5','#block-6','#block-7','#footer'];
+        hrefs = ['#block-1', '#block-2', '#block-3', '#block-4','#block-5','#block-6','#footer'];
+        // hrefs = ['#block-1', '#block-2', '#block-3', '#block-4','#block-5','#block-6','#block-7','#footer'];
     for(var i = 0; i < links.length; i++){
       links[i].href = hrefs[i];
     }
@@ -39,7 +56,8 @@ $(document).ready(function () {
       navigationPosition: 'right' ,
   //    navigationTooltips: ['Р“Р»Р°РІРЅР°СЏ', 'РўРµС…РЅРѕР»РѕРіРёРё','Р Р°Р·СЂР°Р±РѕС‚РєР°','РљР»РёРµРЅС‚С‹','РџРѕСЃС‚Р°РІРєР°', 'РљРѕРЅС‚Р°РєС‚С‹'],
       // scrollOverflow:true,
-      anchors: ['main', 'block-1', 'block-2', 'block-3', 'block-4','block-5','block-6','block-7','footer'],
+      anchors: ['main', 'block-1', 'block-2', 'block-3', 'block-4','block-5','block-6','footer'],
+      // anchors: ['main', 'block-1', 'block-2', 'block-3', 'block-4','block-5','block-6','block-7','footer'],
       css3: true,
       // responsiveWidth: 992,
       scrollingSpeed: 1000,
@@ -69,6 +87,7 @@ $(document).ready(function () {
 
     
 }
+
 
 
 
