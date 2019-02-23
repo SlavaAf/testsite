@@ -8,7 +8,11 @@
 
 $(document).ready(function(){
 
-  var video__home = document.getElementById("video__1");
+  var video__home   = document.getElementById("video__1"),
+      video__source = document.getElementById("video__1_source"),
+      video__array  = ["assets/video/couple_esti_louder.mp4", "assets/video/couple_gillette.mp4"];
+  (Math.random() >= 0.5) ? video__source.src = video__array[0] : video__source.src = video__array[1];
+  video__home.load();
   video__home.play();
   video__home.addEventListener("ended", function(){
     document.querySelector(".section__container").classList.add("active");
@@ -27,6 +31,8 @@ $(document).ready(function(){
         var element  = document.getElementById(link),
             parent   = element.parentElement,
             position = element.offsetTop - 100;
+            console.log(element)
+            console.log(position)
         parent.scrollTop = position;
 
       }
@@ -61,7 +67,7 @@ $(document).ready(function(){
       css3: true,
       // responsiveWidth: 992,
       scrollingSpeed: 1000,
-      normalScrollElements: ".scrollable-content-new",
+      normalScrollElements: ".scrollable-content-new, .footer",
 
     })
   }

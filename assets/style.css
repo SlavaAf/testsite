@@ -2423,6 +2423,41 @@ video{
     padding-left: 30px;
     padding-bottom: 20px;
 }
+.platform__scheme{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: -35px;  
+}
+.integrate_scheme{
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: -50px;
+}
+#contact-us{
+  padding-bottom: 0;
+}
+
+#contact-us .fp-tableCell{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  height: 100%!important
+}
+#contact-us .container{
+  padding-bottom: 30px;
+}
+#contact-us .footer{
+  height: 60px;
+  background-color: #fff;
+}
+@media(max-width: 1000px){
+
+  #contact-us .footer{
+    display: none;
+  }
+}
 @media(max-width: 767px){
   .scrollable-content::-webkit-scrollbar, .scrollable-content-new::-webkit-scrollbar {
     width: 0;
