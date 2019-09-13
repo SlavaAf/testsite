@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Настройки(Основные)</title>
+    <title>Настройки(Уведомления)</title>
     <meta name="theme-color" content="#fff">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -344,100 +344,117 @@
             </ul>
           </nav>
         </aside>
-        <section class="pref__main">
-          <form class="pref__form">
-            <legend class="pref__legend">Основные данные</legend>
-            <fieldset class="pref__fieldset">
-              <label class="label"><span><sup>*</sup>Имя</span>
-                <input class="input" type="text" value="Сергей" required readonly>
-              </label>
-              <label class="label"><span><sup>*</sup>Фамилия</span>
-                <input class="input" type="text" value="Антонюк" required readonly>
-              </label>
-              <label class="label"><span><sup>*</sup>Город</span>
-                <input class="input" type="text" value="Москва" name="city" required>
-              </label>
-              <label class="label"><span><sup>*</sup>День рождения</span>
-                <input class="input" type="datetime" value="03.12.1995" name="date_of_birth" required readonly>
-              </label>
-              <label class="label"><span><sup>*</sup>Телефон</span>
-                <input class="input" type="tel" value="+7(XXX) XX-XX-XXX" name="phone" required>
-              </label>
-              <label class="label"><span><sup>*</sup>Email</span>
-                <input class="input" type="email" value="email@xxx.com" name="email" required>
-              </label>
-              <label class="label"><span><sup>*</sup>Статус</span>
-                <input class="checkbox--other" type="checkbox" name="status" required id="check_status">
-                <label class="checkbox--other_btn" for="check_status" data-txt_1="Свободен" data-txt_2="Занят"></label>
-              </label>
-              <label class="label--other">
-                <input class="checkbox" type="checkbox" name="ip" required id="check_ip">
-                <label class="checkbox--btn" for="check_ip"></label>У меня есть юридическое лицо или ИП
-              </label>
-              <!-- label.label--other.label--mb15-->
-              <!-- 	input(type="checkbox" name="ip" required)#check_ip.checkbox-->
-              <!-- 	label(for="check_ip").checkbox--btn-->
-              <!-- 	="У меня есть юридическое лицо или ИП"-->
-              <!-- 	.pref__form--inside-->
-              <!-- 		legend.pref__form--inside__legend -->
-              <!-- 			="Загрузите пожалуйста документы, подтверждающие Ваш статус в слеудющих допустимых форматах: JPG, PNG, TIF, BMP."-->
-              <!-- 		button(type="").button.button--inside  -->
-              <!-- 			="Прикрепить файл"-->
-              <!-- 			span.button--inside--file-->
-              <!-- 				svg(width='15', height='15', viewBox='0 0 15 15', fill='none', xmlns='http://www.w3.org/2000/svg')-->
-              <!-- 					path(fill-rule='evenodd', clip-rule='evenodd', d='M0 1.91699C0 1.64085 0.223858 1.41699 0.5 1.41699H7C7.27614 1.41699 7.5 1.64085 7.5 1.91699C7.5 2.19313 7.27614 2.41699 7 2.41699H1V13.417H12V8.41699C12 8.14085 12.2239 7.91699 12.5 7.91699C12.7761 7.91699 13 8.14085 13 8.41699V13.917C13 14.1931 12.7761 14.417 12.5 14.417H0.5C0.223858 14.417 0 14.1931 0 13.917V1.91699Z', fill='#3D404C')-->
-              <!-- 					path(fill-rule='evenodd', clip-rule='evenodd', d='M10.1199 9.03974L6.53055 9.31585C6.31029 9.33279 6.118 9.16797 6.10105 8.9477L5.82494 5.35831C5.808 5.13804 5.97282 4.94575 6.19309 4.92881C6.41335 4.91186 6.60564 5.07669 6.62259 5.29695L6.82463 7.9235L12.1962 1.65671L12.8036 2.17734L7.43204 8.44414L10.0586 8.24209C10.2789 8.22515 10.4711 8.38997 10.4881 8.61024C10.505 8.8305 10.3402 9.02279 10.1199 9.03974Z', fill='#3D404C')-->
-              <!-- label.label--other.label--mb15-->
-              <!-- 	input(type="checkbox" name="ip" required)#check_ip.checkbox-->
-              <!-- 	label(for="check_ip").checkbox--btn-->
-              <!-- 	="У меня есть юридическое лицо или ИП"-->
-              <!-- 	.pref__form--inside-->
-              <!-- 		legend.pref__form--inside__legend На данный момент предоставленные Вами документы проходят проверку. Спасибо за ожидание.-->
-              <!-- 		button(type="").button.button--inside -->
-              <!-- 			="Прикрепить файл"-->
-              <!-- 			span.button--inside--file-->
-              <!-- 				svg(width='15', height='15', viewBox='0 0 15 15', fill='none', xmlns='http://www.w3.org/2000/svg')-->
-              <!-- 					path(fill-rule='evenodd', clip-rule='evenodd', d='M0 1.91699C0 1.64085 0.223858 1.41699 0.5 1.41699H7C7.27614 1.41699 7.5 1.64085 7.5 1.91699C7.5 2.19313 7.27614 2.41699 7 2.41699H1V13.417H12V8.41699C12 8.14085 12.2239 7.91699 12.5 7.91699C12.7761 7.91699 13 8.14085 13 8.41699V13.917C13 14.1931 12.7761 14.417 12.5 14.417H0.5C0.223858 14.417 0 14.1931 0 13.917V1.91699Z', fill='#3D404C')-->
-              <!-- 					path(fill-rule='evenodd', clip-rule='evenodd', d='M10.1199 9.03974L6.53055 9.31585C6.31029 9.33279 6.118 9.16797 6.10105 8.9477L5.82494 5.35831C5.808 5.13804 5.97282 4.94575 6.19309 4.92881C6.41335 4.91186 6.60564 5.07669 6.62259 5.29695L6.82463 7.9235L12.1962 1.65671L12.8036 2.17734L7.43204 8.44414L10.0586 8.24209C10.2789 8.22515 10.4711 8.38997 10.4881 8.61024C10.505 8.8305 10.3402 9.02279 10.1199 9.03974Z', fill='#3D404C')-->
-              <!-- label.label--other.label--mb15-->
-              <!-- 	input(type="checkbox" name="ip" required)#check_ip.checkbox-->
-              <!-- 	label(for="check_ip").checkbox--btn-->
-              <!-- 	="У меня есть юридическое лицо или ИП"-->
-              <!-- 	.pref__form--inside-->
-              <!-- 		legend.pref__form--inside__legend Ваш статус успешно потвержден!-->
-              <!-- label.label--other-->
-              <!-- 	input(type="checkbox" name="ip" required)#check_ip.checkbox-->
-              <!-- 	label(for="check_ip").checkbox--btn-->
-              <!-- 	="У меня есть юридическое лицо или ИП"-->
-              <!-- 	.pref__form--inside-->
-              <!-- 		legend.pref__form--inside__legend -->
-              <!-- 			="К сожалению нам не удалось подтвердить Ваш статус по слежующей причине:"-->
-              <!-- 			span.error -->
-              <!-- 				="плохое качество фото"-->
-              <!-- 			=". Пожалуйста повторите попытку снова."-->
-              <button class="button" type="submit">Сохранить</button>
-            </fieldset>
-            <fieldset class="pref__fieldset pref__fieldset--bottom">
-              <ul class="pref__form__ul">
-                <li class="pref__form__li">Поля помеченые как “ <sup>*</sup> ” обязательны для заполнения</li>
-                <li class="pref__form__li">Имя, фамилию, день рождения невозможно изменить после регистрации </li>
-                <li class="pref__form__li">Телефон и Email скрыт от для других пользователей</li>
-              </ul>
-            </fieldset>
-          </form>
-        </section>
-        <section class="pref__pass">
-          <form class="pref__form pref__form--pass">
-            <legend class="pref__legend">Изменить пароль</legend>
-            <fieldset class="pref__fieldset pref__fieldset--top">
-              <label class="label"><span>Пароль</span>
-                <input class="input" type="password" required>
-              </label>
-              <label class="label"><span> Подтвердить</span>
-                <input class="input" type="password" required>
-              </label>
-              <button class="button" type="submit">Изменить пароль</button>
-            </fieldset>
+        <section class="pref__main--all">
+          <form class="pref__form--all">
+            <table class="pref__table">
+              <thead class="pref__table__thead">
+                <tr>
+                  <th>Тип уведомления</th>
+                  <th> <span class="pref__table__icon">
+                      <svg width="15" height="13" viewbox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.4397 4.24004C1.62945 4.37393 2.20142 4.77161 3.15564 5.43285C4.1099 6.0941 4.84092 6.60324 5.34874 6.9603C5.40453 6.99944 5.52307 7.08453 5.7044 7.21567C5.88576 7.3469 6.03646 7.45294 6.15637 7.53383C6.27637 7.61469 6.42144 7.7054 6.59172 7.80581C6.76194 7.90614 6.9224 7.98161 7.07307 8.03157C7.22376 8.08193 7.36326 8.10688 7.49159 8.10688H7.5H7.50844C7.63677 8.10688 7.77632 8.0819 7.92702 8.03157C8.07763 7.98161 8.23823 7.90605 8.40831 7.80581C8.57847 7.70528 8.72354 7.61466 8.84354 7.53383C8.96354 7.45294 9.11412 7.3469 9.29554 7.21567C9.47684 7.08441 9.59552 6.99944 9.65132 6.9603C10.1646 6.60324 11.4705 5.69639 13.5687 4.23986C13.976 3.95539 14.3164 3.61213 14.5897 3.21032C14.8633 2.80869 15 2.38736 15 1.94656C15 1.5782 14.8674 1.26288 14.6023 1.00063C14.3372 0.738321 14.0233 0.607239 13.6607 0.607239H1.33923C0.909571 0.607239 0.578919 0.752306 0.347334 1.04244C0.115778 1.33263 0 1.69536 0 2.13059C0 2.48214 0.153511 2.8631 0.460385 3.27324C0.76723 3.6834 1.09378 4.0057 1.4397 4.24004Z" fill="#3D404C"></path>
+                        <path d="M14.1628 5.13562C12.3327 6.37434 10.943 7.33704 9.99445 8.0235C9.67638 8.25778 9.41835 8.44067 9.22018 8.57172C9.02202 8.70286 8.75848 8.83678 8.42918 8.97344C8.09999 9.11029 7.79321 9.17852 7.50855 9.17852H7.50002H7.49161C7.20702 9.17852 6.90005 9.11029 6.57087 8.97344C6.24168 8.83678 5.97796 8.70286 5.77986 8.57172C5.58182 8.44067 5.3237 8.25778 5.00565 8.0235C4.25226 7.47108 2.86557 6.50833 0.845509 5.13562C0.527348 4.9237 0.24554 4.6808 0 4.40741V11.0534C0 11.422 0.131082 11.7371 0.393392 11.9994C0.655644 12.2617 0.970992 12.3929 1.33932 12.3929H13.6608C14.029 12.3929 14.3443 12.2617 14.6066 11.9994C14.869 11.737 15 11.422 15 11.0534V4.40741C14.76 4.67514 14.4811 4.91805 14.1628 5.13562Z" fill="#3D404C"></path>
+                      </svg></span>E-mail
+                  </th>
+                  <th> <span class="pref__table__icon">
+                      <svg width="9" height="15" viewbox="0 0 9 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.88278 15C6.88278 15 8.24432 15 8.24432 13.6364V1.36358C8.2443 0 6.88278 0 6.88278 0H2.1174C2.1174 0 0.755859 0 0.755859 1.36358V13.6364C0.755878 15 2.1174 15 2.1174 15H6.88278ZM4.50009 14.4322C4.12431 14.4322 3.81933 14.1272 3.81933 13.7515C3.81933 13.3757 4.12431 13.0707 4.50009 13.0707C4.87588 13.0707 5.18085 13.3757 5.18085 13.7515C5.18085 14.1273 4.87588 14.4322 4.50009 14.4322ZM3.47893 0.831212C3.47893 0.746799 3.5191 0.680758 3.56946 0.680758H5.43068C5.48037 0.680758 5.52123 0.748163 5.52123 0.831212V0.871383C5.52123 0.955795 5.48037 1.02184 5.43068 1.02184H3.56946C3.51977 1.02184 3.47893 0.954432 3.47893 0.871383V0.831212ZM1.43664 1.70191H7.56354V12.5942H1.43664V1.70191Z" fill="#3D404C"></path>
+                      </svg></span>Push
+                  </th>
+                  <th> <span class="pref__table__icon">
+                      <svg width="15" height="13" viewbox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14.6327 0.367214C14.388 0.122446 14.0938 -6.10352e-05 13.7499 -6.10352e-05H1.25C0.906258 -6.10352e-05 0.612071 0.122446 0.367138 0.367214C0.122343 0.612064 0 0.906224 0 1.24999V9.75006C0 10.0939 0.122343 10.388 0.367138 10.6329C0.612071 10.8777 0.906258 11 1.25 11H5.50007C5.50007 11.1979 5.45837 11.4012 5.37502 11.6094C5.29172 11.8177 5.20837 11.9999 5.12502 12.1561C5.04178 12.3125 5.00011 12.4269 5.00011 12.4998C5.00011 12.6352 5.04956 12.7526 5.14853 12.8513C5.24745 12.9504 5.36465 13.0001 5.50007 13.0001H9.50007C9.63549 13.0001 9.75272 12.9505 9.85163 12.8513C9.95069 12.7527 10.0001 12.6352 10.0001 12.4998C10.0001 12.4323 9.95838 12.3189 9.87506 12.1601C9.79171 12.0013 9.70836 11.8162 9.62512 11.6055C9.54177 11.3945 9.50009 11.1927 9.50009 11H13.7502C14.0939 11 14.388 10.8777 14.6328 10.6329C14.8776 10.3881 15 10.0939 15 9.75006V1.24999C15.0001 0.906224 14.8776 0.612064 14.6327 0.367214ZM14 7.75002C14 7.81774 13.9753 7.87625 13.9258 7.9258C13.8763 7.97516 13.8177 7.99987 13.7499 7.99987H1.25C1.18233 7.99987 1.12372 7.97516 1.07424 7.9258C1.0248 7.87608 1.00003 7.81774 1.00003 7.75002V1.24999C1.00003 1.18227 1.02471 1.12371 1.07424 1.07424C1.12374 1.02485 1.18236 1.00003 1.25 1.00003H13.7501C13.8178 1.00003 13.8765 1.02476 13.9258 1.07424C13.9753 1.12374 14 1.1823 14 1.24999V7.75002Z" fill="#3D404C"></path>
+                      </svg></span>Push
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="pref__table__tbody">
+                <tr>
+                  <td>Системные уведомления</td>
+                  <td>
+                    <div class="checkbox--out">
+                      <input class="checkbox" type="checkbox" name="" checked id="check_ip">
+                      <label class="checkbox--btn" for="check_ip"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="checkbox--out">
+                      <input class="checkbox" type="checkbox" name="" id="check_ip2">
+                      <label class="checkbox--btn" for="check_ip2"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="checkbox--out">
+                      <input class="checkbox" type="checkbox" name="" id="check_ip3">
+                      <label class="checkbox--btn" for="check_ip3"></label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Финансовые уведомления</td>
+                  <td>
+                    <div class="checkbox--out">
+                      <input class="checkbox" type="checkbox" name="" id="check_ipq">
+                      <label class="checkbox--btn" for="check_ipq"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="checkbox--out">
+                      <input class="checkbox" type="checkbox" name="" checked id="check_ipq2">
+                      <label class="checkbox--btn" for="check_ipq2"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="checkbox--out">
+                      <input class="checkbox" type="checkbox" name="" id="check_ipq3">
+                      <label class="checkbox--btn" for="check_ipq3"></label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Уведомление при смене статуса заказа</td>
+                  <td>
+                    <div class="checkbox--out">
+                      <input class="checkbox" type="checkbox" name="" checked id="check_ipw">
+                      <label class="checkbox--btn" for="check_ipw"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="checkbox--out">
+                      <input class="checkbox" type="checkbox" name="" id="check_ipw2">
+                      <label class="checkbox--btn" for="check_ipw2"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="checkbox--out">
+                      <input class="checkbox" type="checkbox" name="" checked id="check_ipw3">
+                      <label class="checkbox--btn" for="check_ipw3"></label>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>Я хочу получать новости сайта</td>
+                  <td>
+                    <div class="checkbox--out">
+                      <input class="checkbox" type="checkbox" name="" checked id="check_ipe">
+                      <label class="checkbox--btn" for="check_ipe"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="checkbox--out">
+                      <input class="checkbox" type="checkbox" name="" checked id="check_ipe2">
+                      <label class="checkbox--btn" for="check_ipe2"></label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="checkbox--out">
+                      <input class="checkbox" type="checkbox" name="" id="check_ipe3">
+                      <label class="checkbox--btn" for="check_ipe3"></label>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </form>
         </section>
       </div>
